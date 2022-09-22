@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="keywords" content="card designs, card components, grid, grids, layout, flexbox, flex">
+  <meta name="description" content="One page Fylo landing page with two column layout">
+	
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  
+  <script src="index.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+	<header class="flex"> 
+		<div class="logo header-logo">
+			<img src="./images/logo.svg" alt="logo" />
+		</div>
+		<nav class="nav-bar">
+			<a href="#" class="in-block">Features</a>
+			<a href="#" class="in-block">Team</a>
+			<a href="#" class="in-block">Sign In</a>
+		</nav>
+	</header>
+	<main class="container">
+		
+		<div class="content mt-5">
+			<div class="grid secure sect-1">
+				<div class="right image">
+					<img src="./images/illustration-1.svg" alt="illustration-1" />
+				</div>
+				<div class="left mt-2">
+					<h2 class="heading">
+						All your files in one secure location, accessible anywhere.
+					</h2>
+					<p class="mt-2">
+						Fylo stores your most important files in one secure location. 
+						Access them wherever you need, share and collaborate with friends, 
+						family, and co-workers.
+					</p>
+					
+					<div class="cta-container mt-2">
+						<div class="input-box-container">
+							<input type="email" name="email" class="email" placeholder="Enter your email..">
+							<div class="message-container">
+								<span class="display-message"></span>
+							</div>
+						</div>
+						<input type="submit" name="subscribe" value="Get-started" class="cta"/>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="grid productivity sect-2 mt-xl pt-5">
+				<div class="right image">
+					<img src="./images/illustration-2.svg" alt="illustration-2" />
+				</div>
+				<div class="left">
+					<h2 class="heading mt-4">
+						Stay productive, wherever you are
+					</h2>
+					<p class="mt-2">
+						Never let location be an issue when accessing your files. Fylo has you 
+						covered for all of your file storage needs.
+					</p>
+					<p class="mt-1">
+						Securely share files and folders with friends, family and colleagues for 
+						live collaboration. No email attachments required!
+					</p>
+					
+					<a href="#" class="mt-2">
+						<span>See how Fylo works</span>
+						<img src="./images/icon-arrow.svg" alt="arrow sign" />
+					</a>
+					
+					<div class="card-container mt-2">
+						<div class="card">
+							<p class="testimonial">
+								Fylo has improved our team productivity by an order of magnitude. Since 
+								making the switch our team has become a well-oiled collaboration machine.
+							</p>
+							<div class="testifier flex mt-2">
+								<div class="testifier_image">
+									<img src="./images/avatar-testimonial.jpg" alt="avatar-testimonial" />
+								</div>
+								<div class="testifier_name">
+									<h3>Kyle Burton</h3>
+									<h4>Founder & CEO, Huddle</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>  
+		</div>
+	</main>
+	
+	<div class="access sect-3 mt-4 pt-3">
+		<div class="sect-3-container grid">
+			<div class="left">
+				<h2 class="heading">
+					Get early access today
+				</h2>
+				<p class="mt-1">
+					It only takes a minute to sign up and our free starter tier is extremely generous. 
+					If you have any questions, our support team would be happy to help you.
+				</p>
+			</div>
+			<div class="cta-container mt-2">
+				<div class="input-box-container">
+					<input type="email" name="email" class="email no-box-sha" placeholder="email@example.com">
+					<span class="display-message"></span>
+				</div>
+				<input type="submit" name="subscribe" value="Get Started For Free" class="cta no-box-sha"/>
+						
+			</div>
+		</div>
+	</div>
+	<footer class="pt-4">
+		<div class="footer-container">
+			<div class="logo footer-logo">
+				<img src="./images/logo-2.svg" alt="logo" />
+			</div>
+			<div class="grid grid-4 mt-1">
+				<div class="contact">
+					<div class="phone_number">
+						<img src="./images/icon-phone.svg" alt="phone icon" />
+						<span>Phone: +1-543-123-4567</span>
+					</div>
+					<div class="e-addr">
+						<img src="./images/icon-email.svg" alt="email icon" />
+						<a href="mailto:example@fylo.com">example@fylo.com</a>
+					</div>
+				</div>
+				
+				<div class="nav-footer mt-3">
+					<a href="">About Us</a>
+					<a href="">Jobs</a>
+					<a href="">Press</a>
+					<a href="">Blog</a>
+				</div>
+				
+				<div class="nav-footer mt-2">
+					<a href="">Contact Us</a>
+					<a href="">Terms</a>
+					<a href="">Privacy</a>
+				</div>
+				
+				<div class="social-icon mt-3">
+					<a href="https://www.facebook.com">
+						<span class="s-icon">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</span>
+					</a>
+					<a href="https://www.twitter.com">
+						<span class="s-icon">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+						</span>
+					</a>
+					<a href="https://www.instagram.com">
+						<span class="s-icon">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+						</span>
+					</a>
+				</div>
+			</div>
+			<p class="attribution mt-4" id="attribution">
+			  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+			  Coded by <a href="#">Olisaemeka Victor</a>.
+			</p>
+		</div>
+	</footer>
+</body>
+
+
+
+</html>

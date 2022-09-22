@@ -1,0 +1,404 @@
+@import url("utilities.css");
+
+
+:root{
+	box-sizing: border-box;
+
+	--clr-Very-Dark-Blue-p: 243 87% 12%;
+	--clr-Desaturated-Blue-p: 238 22% 44%;
+
+	--clr-Bright-Blue-A: 224 93% 58%;
+	--clr-Moderate-Cyan-A: 170 45% 43%;
+
+	--clr-Light-Grayish-Blue-N: 240 75% 98%;
+	--clr-Light-Gray-N: 0 0% 75%;
+}
+
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+}
+
+img,
+image, 
+picture{
+	max-width: 100%;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	color: hsl(var(--clr-Very-Dark-Blue-p));
+	background-image: url("./images/bg-curve-mobile.svg");
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 127em 142em;
+}
+
+h1, h2, h3
+h4, h5, h6,
+nav > a{
+	font-family: 'Raleway', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	display: inline-block;
+	color: inherit;
+}
+
+header {
+	padding: 2em;
+}
+
+.container,
+header, 
+.sect-3 > div,
+footer > div{
+	max-width: 80em;
+	margin: 0 auto;
+	padding: 2em;
+}
+
+.logo{
+	max-width: 7em;
+}
+
+.flex{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav{
+	padding: 6px;
+}
+
+nav > a{
+	align-self: center;
+	font-size: 12px;
+	font-weight: bold;
+	width: fit-content;
+	height: 25px;
+}
+
+nav > a:hover{
+	border-bottom: 2px solid #6B9BFF;
+}
+
+nav > a + a{
+	margin-left: 1em;
+}
+
+.container > .content{
+	padding-bottom: .5em;
+	border-bottom: 1px solid hsl(var(--clr-Very-Dark-Blue-ppower))
+}
+
+.sect-1 > .left{
+	text-align: center;
+}
+input[type="email"]{
+	width: 100%;
+	outline: none;
+	padding: 1em;
+	border: 2px solid hsl(var(--clr-Bright-Blue-A) / .7);
+	border-radius: 5px;
+	box-shadow: inset 5px 5px 7px 5px var(--clr-Light-Grayish-Blue-N);
+}
+
+input[type="email"]::placeholder{
+	color: hsl(var(--clr-Light-Gray-N))
+}
+
+input[type="submit"]{
+	cursor: pointer;
+}
+
+input[type="submit"]:hover{
+	background-color: #6B9BFF;
+}
+
+
+
+/* to be added to the html when the user enter wrong email address */
+.sect-1 > .left> .cta-container> .input-box-container > .error-border,
+.sect-3 > div > .cta-container> .input-box-container > .error-border{
+	border: 2px solid rgb(213, 142, 163);
+}
+/* target the div below the email input box */
+.display-message:not(.sect-3 .display-message){
+	color: rgb(213, 142, 163);
+	font-size: 12px;
+}
+
+.sect-3 >div .display-message{
+	font-size: 12px;
+}
+	
+.cta{
+	text-transform: capitalize;
+	padding: 1.1em;
+	margin-top: 1em;
+	width: 100%;
+	background-color: hsl(var(--clr-Bright-Blue-A));
+	color: #fff;
+	border: 0;
+	border-radius: 5px;
+	box-shadow: 5px 5px 3px 3px hsl(var(--clr-Light-Grayish-Blue-N));
+}
+
+.left > p:where:not(.sect-1 > .left > p){
+	text-align: left;
+}
+
+.left > a{
+	display: flex;
+	align-items: center;
+	gap: .2em;
+	max-width: fit-content;
+	margin-inline: auto;
+	font-size: 14px;
+	font-weight: 400;
+	padding-bottom: .5em;
+	color: hsl(var(--clr-Moderate-Cyan-A));
+	border-bottom: 2px solid hsl(var(--clr-Moderate-Cyan-A));
+}
+
+.left > a:hover{
+	border-bottom-color: transparent;
+	transition: border-bottom .9s ease-in-out;
+}
+
+.card{
+	font-size: 12px;
+	max-width: 30em;
+	margin-inline: auto;
+	text-align: left;
+	background-color: #fff;
+	padding: 2em;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px 5px hsl(var(--clr-Light-Grayish-Blue-N));
+	position: relative;
+	
+}
+
+.card::before{
+	content : "";
+	position: absolute;
+	top: 0;
+	left: 1.5em;
+	width: 2em;
+	height: 2em;
+	background: url("./images/icon-quotes.svg") no-repeat center;
+}
+
+.sect-3{
+	background-color: hsl(238 40% 50%);
+	color: #fff;
+	text-align: center;
+	padding: 4em 2em 6em 2em;
+}
+
+.sect-3 > div > .left > h2{
+	font-size: 1.3rem;
+}
+
+.sect-3 > div >.left > p{
+	text-align: center;
+}
+
+.cta-container{
+	padding: 0 1.2em;
+	height: 7.8125em;
+}
+
+.sect-3 > div >.cta-container .no-box-sha{
+	box-shadow: none;
+	border: 0;
+}
+
+.testifier.flex {
+	justify-content: start;
+}
+
+.testifier.flex > * + *{
+	margin-left: 1em;
+}
+.testifier.flex > .testifier_image{
+	max-width: 3em;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.testifier.flex > .testifier_image > img{
+	display: block;
+}
+
+/* footer */
+footer{
+	background-color: hsl(224 90% 27%); 
+	color: #fff;
+}
+
+.footer-logo{
+	max-width: 12em;
+}
+
+.contact > div {
+	display: flex;
+	align-items: center;
+	gap: 1em;
+}
+
+.contact > div + div{
+	margin-top: 1em;
+}
+
+.nav-footer > a {
+	display: block;
+	max-width: fit-content;
+}
+
+.nav-footer > a:hover{
+	color: #6B9BFF;
+}
+
+.nav-footer > a + a{
+	margin-top: .7em;
+}
+
+.social-icon{
+	display: flex;
+	gap: 1em;
+	margin-inline: auto;
+	max-width: fit-content;
+}
+.social-icon > a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	width: 2em;
+	height: 2em;
+}
+.social-icon > a:hover{
+	color: #6B9BFF;
+	border-color: #6B9BFF;
+}
+#attribution { 
+	font-size: 11px; 
+	text-align: center; 
+}
+#attribution a { 
+	color: hsl(228, 45%, 44%); 
+}
+
+/* adding medai queries for the web age to be reponsive */
+@media (min-width: 600px){
+	
+	body{
+		background-size: 127em 120em;
+	}
+	footer > .grid > .social-icon{
+		margin-inline: 0;
+	}
+	
+	footer > div > .grid{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 0 3em;
+	}
+	
+	footer > div > .grid > div{
+		margin-top: 0;
+	}
+}
+@media (min-width: 671px){
+	body{
+		background-image: url(./images/bg-curve-desktop.svg);
+		background-size: 270em 124em;
+	}
+}
+
+@media (min-width: 800px){
+	body{
+		background-size: 270em 87em;
+	}
+	
+	body *:not(input[type="submit"]):not(footer > .attribution),
+	.sect-3 > div > .left > p{
+		text-align: left;
+	}
+	
+	.container,
+	header,
+	.sect-3,	
+	footer{
+		padding-inline: 5em;
+	}
+	
+	nav > a{
+		font-size: 16px;
+	}
+	header > nav > a + a {
+		margin-left: 2em;
+	}
+	
+	.grid{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 0 3em;
+	}
+	
+	.content > .grid > .left{
+		grid-area: 1;
+	}
+	
+	.container .cta-container{
+		padding-inline: 0;
+	}
+	
+	.left > .cta-container{
+		display: flex;
+		gap: 0 .7em;
+		padding-right: 3em;
+	}
+	
+	.left > .cta-container > div{
+		flex-grow: 2;
+	}
+	
+	.sect-1 .cta-container > .cta{
+		margin-top: 0;
+		width: 12em;
+		align-self: start;
+	}
+	
+	.message-container{
+		position: relative;
+	}
+	
+	.display-message:not(.sect-3 > div .display-message){
+		position: absolute;
+		top: 3px;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+	
+	.sect-3 > div .cta-container > .cta{
+		width: 15em;
+	}
+	
+	.card-container > .card,
+	.sect-2 > .left > a{
+		margin-inline: 0;
+	}
+	
+	.grid.sect-2 > .left > h2{
+		margin-top: 0;
+	}
+}
